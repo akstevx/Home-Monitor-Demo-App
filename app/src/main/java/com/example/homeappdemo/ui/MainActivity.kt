@@ -1,7 +1,6 @@
 package com.example.homeappdemo.ui
 
 import android.content.Context
-import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -27,15 +26,6 @@ class MainActivity : AppCompatActivity() {
         initializeBindingView()
         initializeNavGraph()
         initBottomNav()
-    }
-
-    fun changeLanguage(locale: Language, context: Context) {
-        when (locale) {
-            Language.EN -> setAppLocale(context, "en")
-            Language.FR -> setAppLocale(context, "fr")
-        }
-
-        this.recreate()
     }
 
     private fun initializeBindingView() {
@@ -78,6 +68,14 @@ class MainActivity : AppCompatActivity() {
             }
         }
 
+    }
+    fun changeLanguage(locale: Language, context: Context) {
+        when (locale) {
+            Language.EN -> setAppLocale(context, "en")
+            Language.FR -> setAppLocale(context, "fr")
+        }
+
+        this.recreate()
     }
 
     private fun setAppLocale(context: Context, language: String) {
