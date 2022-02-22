@@ -54,8 +54,8 @@
 
             <ImageView
                 android:id="@+id/ivIconStatus"
-                android:layout_width="@dimen/_10dp"
-                android:layout_height="@dimen/_10dp"
+                android:layout_width="@dimen/_8dp"
+                android:layout_height="@dimen/_8dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="@+id/txtDeviceName"
                 app:layout_constraintTop_toBottomOf="@+id/txtDeviceName"
