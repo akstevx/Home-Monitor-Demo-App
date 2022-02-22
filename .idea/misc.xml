@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="../../../../layout/custom_preview.xml" value="0.3453125" />
+        <entry key="app/src/main/res/drawable-hdpi/shade.xml" value="0.2065" />
+        <entry key="app/src/main/res/drawable/circleheader.xml" value="0.3215" />
+        <entry key="app/src/main/res/drawable/error_ic.xml" value="0.1705" />
+        <entry key="app/src/main/res/drawable/layout_rounded_green.xml" value="0.3215" />
+        <entry key="app/src/main/res/drawable/layout_rounded_red.xml" value="0.3215" />
+        <entry key="app/src/main/res/drawable/layout_rounded_white.xml" value="0.3215" />
+        <entry key="app/src/main/res/drawable/layout_rounded_white_error.xml" value="0.3215" />
+        <entry key="app/src/main/res/drawable/line.xml" value="0.312" />
+        <entry key="app/src/main/res/drawable/rectangle_thumb.xml" value="0.3215" />
+        <entry key="app/src/main/res/drawable/rectangle_track.xml" value="0.3215" />
+        <entry key="app/src/main/res/drawable/shade.xml" value="0.3215" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.31875" />
+        <entry key="app/src/main/res/layout/device_item_layout.xml" value="0.36256963907791717" />
+        <entry key="app/src/main/res/layout/device_item_laypur.xml" value="0.2583368509919797" />
+        <entry key="app/src/main/res/layout/fragment_choose_product_type_dialog.xml" value="0.261650277896537" />
+        <entry key="app/src/main/res/layout/fragment_create_device.xml" value="0.261650277896537" />
+        <entry key="app/src/main/res/layout/fragment_create_profile.xml" value="0.261650277896537" />
+        <entry key="app/src/main/res/layout/fragment_date_picker_bottom_sheet.xml" value="0.2289873140293495" />
+        <entry key="app/src/main/res/layout/fragment_device.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/fragment_edit_device.xml" value="0.261650277896537" />
+        <entry key="app/src/main/res/layout/fragment_settings.xml" value="0.2786514282226562" />
+        <entry key="app/src/main/res/layout/fragment_splash.xml" value="0.26231994628906247" />
+        <entry key="app/src/main/res/layout/fragment_user_profile.xml" value="0.23791961669921877" />
+        <entry key="app/src/main/res/layout/heater_device_layout.xml" value="0.25162983111919346" />
+        <entry key="app/src/main/res/layout/light_device_layout.xml" value="0.261650277896537" />
+        <entry key="app/src/main/res/layout/roller_device_layout.xml" value="0.26940479449809956" />
+        <entry key="app/src/main/res/layout/settings_item_layout.xml" value="0.261650277896537" />
+        <entry key="app/src/main/res/menu/bottom_navigation_menu.xml" value="0.31875" />
+        <entry key="app/src/main/res/menu/list_menu.xml" value="0.2583368509919797" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

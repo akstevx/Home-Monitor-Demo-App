@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rollerContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_4dp"
+        android:text="@string/current_position"
+        app:layout_constraintStart_toStartOf="@+id/outlinedTextField2"
+        app:layout_constraintTop_toTopOf="@+id/shutterSlider" />
+
+    <TextView
+        android:id="@+id/txtShutterLevel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/textView18"
+        app:layout_constraintStart_toStartOf="@+id/textView18"
+        app:layout_constraintTop_toBottomOf="@+id/textView18" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/outlinedTextField2"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_16dp"
+        android:layout_marginTop="@dimen/_24dp"
+        android:layout_marginEnd="@dimen/_16dp"
+        android:hint="@string/shutters_name"
+        app:boxBackgroundColor="@color/white"
+        app:boxStrokeColor="@color/stroke_selector"
+        app:boxStrokeErrorColor="@color/error_red"
+        app:boxStrokeWidth="1dp"
+        app:hintTextColor="@color/hint_selector"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3"
+        app:placeholderText="e.g: New RollerShutter">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etShutterName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:imeOptions="actionNext"
+            android:inputType="textPersonName"
+            android:textSize="13sp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <hearsilent.discreteslider.DiscreteSlider
+        android:id="@+id/shutterSlider"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_marginTop="@dimen/_32dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:paddingLeft="@dimen/_48dp"
+        android:paddingRight="@dimen/_48dp"
+
+        android:rotation="0"
+        app:ds_count="100"
+        app:ds_inactiveTrackColor="@color/thumb_track"
+        app:ds_maxProgress="100"
+
+        app:ds_minProgress="0"
+
+        app:ds_orientation="vertical"
+        app:ds_thumbColor="@color/primaryColor"
+        app:ds_thumbPressedColor="@color/primaryColor"
+
+        app:ds_thumbRadius="6dp"
+        app:ds_tickMarkColor="@color/secondaryColor"
+
+        app:ds_tickMarkDashLength="1dp"
+        app:ds_tickMarkInactiveColor="@color/secondaryColor"
+        app:ds_tickMarkPatterns="dot,dash"
+
+        app:ds_tickMarkStep="1"
+        app:ds_trackColor="@color/secondaryColor"
+        app:ds_trackWidth="4dp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/outlinedTextField2"
+        app:layout_constraintTop_toBottomOf="@+id/outlinedTextField2" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnCreateShutter"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/button_height2"
+        android:layout_marginStart="@dimen/_32dp"
+        android:layout_marginTop="@dimen/_32dp"
+        android:layout_marginEnd="@dimen/_32dp"
+        android:text="@string/create_device"
+        android:textAllCaps="false"
+        app:cornerRadius="@dimen/_4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/shutter_ic" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/set_position"
+        app:layout_constraintEnd_toEndOf="@+id/shutterSlider"
+        app:layout_constraintStart_toStartOf="@+id/shutterSlider"
+        app:layout_constraintTop_toBottomOf="@+id/shutterSlider" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

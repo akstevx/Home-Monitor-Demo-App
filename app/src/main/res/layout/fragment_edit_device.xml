@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragments.device.CreateDeviceFragment">
+
+    <ProgressBar
+        android:id="@+id/progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.45" />
+
+
+    <include
+        android:visibility="gone"
+        android:id="@+id/lightDeviceLayout"
+        layout="@layout/light_device_layout" />
+
+    <include
+        android:visibility="gone"
+        android:id="@+id/heaterDeviceLayout"
+        layout="@layout/heater_device_layout" />
+
+    <include
+        android:visibility="visible"
+        android:id="@+id/rollerShutterDeviceLayout"
+        layout="@layout/roller_device_layout" />
+
+</FrameLayout>

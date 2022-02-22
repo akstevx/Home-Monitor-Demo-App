@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello_blank_fragment">Bonjour fragment vierge</string>
+    <string name="app_demo_name">Moniteur à domicile</string>
+    <string name="settings">Réglages</string>
+    <string name="profile">profil</string>
+    <string name="home">Maison</string>
+    <string name="change_language">Changer de langue</string>
+    <string name="logo_subtext">Prenez le contrôle de vos appareils domestiques de n\'importe où</string>
+    <string name="empty_device_text">You currently have no device, click here \nto add new device</string>
+    <string name="empty_user_text">Cliquez ici pour créer un nouveau compte utilisateur</string>
+    <string name="error">Erreur</string>
+    <string name="delete_my_account">Supprimer mon compte</string>
+    <string name="delete_my_devices">Supprimer mes appareils</string>
+    <string name="clear_data">Effacer les données de l\'application</string>
+    <string name="first_name">Prénom</string>
+    <string name="last_name">Nom de famille</string>
+    <string name="city">Ville</string>
+    <string name="city_">Ville:</string>
+    <string name="are_you">Êtes-vous sûr?</string>
+    <string name="are_you_language">Êtes-vous sûr de vouloir changer la langue de l\'application?</string>
+    <string name="street">rue</string>
+    <string name="street_">rue</string>
+
+    <string name="country">De campagne</string>
+    <string name="country_">De campagne:</string>
+
+    <string name="date_of_birth">Date de naissance</string>
+    <string name="date_of_birth_">Date de naissance:</string>
+
+    <string name="postal_code">Code Postal</string>
+    <string name="street_code">Indicatif de la rue</string>
+    <string name="create_user">Créer un utilisateur</string>
+    <string name="next">Sélectionner</string>
+    <string name="birth_date">Choisissez la date de naissance</string>
+    <string name="update_account">Compte mis à jour</string>
+    <string name="account_details">Détails du compte</string>
+    <string name="account_name">Nom du compte:</string>
+    <string name="street_address">Adresse de la rue:</string>
+    <string name="number_of_devices">Nombre d\'appareils:</string>
+    <string name="rollershutters_">Des volets roulants:</string>
+    <string name="heaters_">Radiateurs:</string>
+    <string name="light_">Légère:</string>
+    <string name="successful">Réussie</string>
+    <string name="account_created">Le compte a été créé avec succès</string>
+    <string name="account_updated">Le compte a été mis à jour avec succès</string>
+    <string name="account_deleted">Le compte a été supprimé avec succès</string>
+    <string name="devices_deleted">Tous les appareils ont été supprimés avec succès</string>
+    <string name="app_reset">L\'application a été réinitialisée. Toutes les données ont été effacées</string>
+    <string name="no_device">Vous n\'avez pas d\'appareil</string>
+    <string name="no_account">Vous n\'avez pas de compte</string>
+    <string name="are_you_sure">Voulez-vous vraiment effacer les données de l\'application?</string>
+    <string name="are_you_sure_account">Êtes-vous sûr de vouloir supprimer votre compte?</string>
+    <string name="are_you_sure_device">Êtes-vous sûr de vouloir supprimer tous les appareils?</string>
+    <string name="fields_required">Tous les champs sont requis. S\'il vous plaît remplir.</string>
+    <string name="swipe_to_refresh">Balayez pour rafraîchir</string>
+    <string name="choose_device_type">Choisissez le type d\'appareil</string>
+    <string name="create_new_light">Nouveau dispositif d\'éclairage</string>
+    <string name="create_new_heater">Nouveau dispositif de chauffage</string>
+    <string name="create_new_rollershutters">Nouveau dispositif de volet roulant</string>
+    <string name="create_account">Créer un compte</string>
+    <string name="create_account_device">Vous n\'avez pas créé de compte. Créez un compte pour ajouter un appareil.</string>
+
+    <string name="create_device">Créer un appareil</string>
+    <string name="set_device_mode">Définir le mode de l\'appareil:</string>
+    <string name="heater_name">Entrez le nom de l\'appareil de chauffage</string>
+    <string name="light_name">Entrez le nom de la lumière</string>
+    <string name="shutters_name">Saisir le nom du volet roulant</string>
+    <string name="set_temperature">Définir le niveau de température</string>
+    <string name="set_intensity_level">Définir le niveau d\'intensité</string>
+    <string name="set_position">Définir la position</string>
+    <string name="temperature_level">Niveau de température</string>
+    <string name="current_position">Position actuelle</string>
+    <string name="temperature_must_not">Le niveau de température minimum est de 7. Veuillez régler la température sur 7 ou plus.</string>
+    <string name="bedroom_light">Chambre Lumière</string>
+    <string name="mode">Mode:</string>
+    <string name="intensity">Intensité:</string>
+    <string name="temperature">Température:</string>
+    <string name="position">Position:</string>
+    <string name="mode_off">Mode : Désactivé</string>
+    <string name="intensity_50">Intensité: 50</string>
+    <string name="my_devices">Voici vos appareils</string>
+    <string name="add_new_device">Ajouter un nouvel appareil</string>
+    <string name="sort_by">Trier par</string>
+    <string name="light">Lumières</string>
+    <string name="heaters">Radiateurs</string>
+    <string name="shutters">Des volets roulants</string>
+    <string name="show_all_devices">Afficher tous les appareils</string>
+    <string name="update_device">Mettre à jour l\'appareil</string>
+    <string name="edit_device">Modifier l\'appareil</string>
+    <string name="english">Anglaise</string>
+    <string name="french">Français</string>
+    <string name="cancel">Annuler</string>
+    <string name="cont">Continuez</string>
+</resources>

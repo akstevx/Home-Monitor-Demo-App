@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group android:checkableBehavior="single">
+        <item
+
+            android:id="@+id/menu_sortBy"
+            android:checkable="true"
+            app:showAsAction="ifRoom"
+            android:title="@string/sort_by">
+            <menu>
+                <item
+                    android:id="@+id/sort_by_light"
+                    android:title="@string/light"/>
+                <item
+                    android:id="@+id/sort_by_heater"
+                    android:title="@string/heaters"/>
+                <item
+                    android:id="@+id/sort_by_shutter"
+                    android:title="@string/shutters"/>
+
+            </menu>
+        </item>
+    </group>
+
+    <item
+        android:id="@+id/menu_show_all"
+        android:title="@string/show_all_devices"
+        app:showAsAction="never"/>
+
+</menu>

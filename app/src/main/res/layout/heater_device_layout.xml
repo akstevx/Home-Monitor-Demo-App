@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/heaterContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/txtHeaterLevel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="7°"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/textView16"
+        app:layout_constraintStart_toStartOf="@+id/textView16"
+        app:layout_constraintTop_toBottomOf="@+id/textView16" />
+
+    <Switch
+        android:id="@+id/statusHeaterSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_8dp"
+        android:checked="false"
+        android:textColor="@color/white"
+        android:thumb="@drawable/rectangle_thumb"
+        android:track="@drawable/rectangle_track"
+        app:layout_constraintStart_toStartOf="@+id/textView88"
+        app:layout_constraintTop_toBottomOf="@+id/textView88"
+        tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/outlinedTextField2"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_16dp"
+        android:layout_marginTop="@dimen/_24dp"
+        android:layout_marginEnd="@dimen/_16dp"
+        android:hint="@string/heater_name"
+        app:boxBackgroundColor="@color/white"
+        app:boxStrokeColor="@color/stroke_selector"
+        app:boxStrokeErrorColor="@color/error_red"
+        app:boxStrokeWidth="1dp"
+        app:hintTextColor="@color/hint_selector"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3"
+        app:placeholderText="e.g: Bathroom Heater">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etHeaterName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:imeOptions="actionNext"
+            android:inputType="textPersonName"
+            android:textSize="13sp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/textView88"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_24dp"
+        android:text="@string/set_device_mode"
+        app:layout_constraintStart_toStartOf="@+id/outlinedTextField2"
+        app:layout_constraintTop_toBottomOf="@+id/outlinedTextField2" />
+
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/temperature_level"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView88"
+        app:layout_constraintEnd_toEndOf="@+id/outlinedTextField2" />
+
+    <hearsilent.discreteslider.DiscreteSlider
+        android:id="@+id/heaterSlider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_8dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:paddingLeft="@dimen/_16dp"
+        android:paddingTop="@dimen/_48dp"
+        android:paddingRight="@dimen/_16dp"
+
+        app:ds_count="29"
+        app:ds_inactiveTrackColor="@color/thumb_track"
+        app:ds_maxProgress="29"
+
+        app:ds_minProgress="7"
+        app:ds_thumbColor="@color/primaryColor"
+        app:ds_thumbPressedColor="@color/primaryColor"
+
+        app:ds_thumbRadius="6dp"
+        app:ds_tickMarkColor="@color/secondaryColor"
+
+        app:ds_tickMarkDashLength="1dp"
+        app:ds_tickMarkInactiveColor="@color/secondaryColor"
+        app:ds_tickMarkPatterns="dot,dash"
+
+        app:ds_tickMarkStep="1"
+        app:ds_trackColor="@color/secondaryColor"
+        app:ds_trackWidth="4dp"
+
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/statusHeaterSwitch" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnCreateHeater"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/button_height2"
+        android:layout_marginStart="@dimen/_32dp"
+        android:layout_marginTop="@dimen/_32dp"
+        android:layout_marginEnd="@dimen/_32dp"
+        android:text="@string/create_device"
+        android:textAllCaps="false"
+        app:cornerRadius="@dimen/_4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/heaterSlider" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/heater_ic" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/set_temperature"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/heaterSlider" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

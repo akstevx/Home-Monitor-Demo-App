@@ -1,0 +1,60 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+    ext.versions = [
+            'kotlin'        : '1.6.0',
+            'coroutines'    : '1.4.2',
+            'mockito'       : '3.8.0',
+            'mockito_kotlin': '2.2.0',
+            'junit_ext'     : '1.1.2',
+            'hiltVersion'     : '2.38.1',
+            'retrofitLoggerVersion'  : '4.2.0',
+            'timberVersion' : '4.7.1',
+            'paperPrefVersion': '2.7.1',
+            'navComponentsVersion': "2.4.1",
+            'liveDataVersion': '2.4.0',
+            'roomVersion': '2.4.0'
+    ]
+
+    repositories {
+        google()
+        maven { url 'https://jitpack.io' }
+    }
+
+    dependencies {
+        classpath 'com.android.tools.build:gradle:4.0.2'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$versions.kotlin"
+        classpath "com.google.dagger:hilt-android-gradle-plugin:$versions.hiltVersion"
+        classpath "androidx.navigation:navigation-safe-args-gradle-plugin:$versions.navComponentsVersion"
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+plugins {
+    id 'com.android.application' version '7.1.1' apply false
+    id 'com.android.library' version '7.1.1' apply false
+    id 'org.jetbrains.kotlin.android' version '1.5.30' apply false
+}
+
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+        maven { url 'https://jitpack.io' }
+    }
+}
+
+ext {
+    compileSdkVersion = 31
+    minSdkVersion = 21
+    targetSdkVersion = 31
+    versionCode = 18
+
+    buildToolsVersion = "30.0.2"
+    versionName = "3.1.2"
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
