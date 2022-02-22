@@ -80,7 +80,7 @@ class MainActivity : AppCompatActivity() {
 
     }
 
-    fun setAppLocale(context: Context, language: String) {
+    private fun setAppLocale(context: Context, language: String) {
         val locale = Locale(language)
         Locale.setDefault(locale)
         val config = context.resources.configuration
