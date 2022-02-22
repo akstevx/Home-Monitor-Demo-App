@@ -98,7 +98,7 @@ class SettingsFragment : Fragment() {
 
     private fun deleteAccount() {
         if (viewModel.getAccountStatus()) {
-            showWarning(getString(R.string.are_you_sure)) {
+            showWarning(getString(R.string.are_you_sure_account)) {
                 viewModel.deleteUserAccount()
             }
         } else showError(getString(R.string.no_account))
@@ -106,7 +106,7 @@ class SettingsFragment : Fragment() {
 
     private fun clearDevices() {
         if (viewModel.getDeviceStatus()) {
-            showWarning(getString(R.string.are_you_sure)) {
+            showWarning(getString(R.string.are_you_sure_device)) {
                 viewModel.clearDevices()
             }
         } else showError(getString(R.string.no_device))
