@@ -74,7 +74,7 @@ fun showDialogWithNegative(
             action()
         }
         .onNegative(
-            activity.applicationContext.getString(R.string.english),
+            activity.applicationContext.getString(R.string.cancel),
             buttonBackgroundColor = R.drawable.layout_rounded_green,
             textColor = ContextCompat.getColor(activity.applicationContext, R.color.white)
         ) { }
