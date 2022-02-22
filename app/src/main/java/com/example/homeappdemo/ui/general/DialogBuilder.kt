@@ -7,14 +7,12 @@ import com.example.homeappdemo.R
 
 fun showDialog(
     activity: Activity,
-    title: String = "Successful",
     body: String,
-    positiveText: String = "Continue",
     action: () -> Unit
 ) {
     AwesomeDialog.build(activity)
         .title(
-            title,
+            activity.applicationContext.getString(R.string.successful),
             titleColor = ContextCompat.getColor(activity.applicationContext, R.color.white)
         )
         .body(
@@ -24,7 +22,7 @@ fun showDialog(
         .icon(R.drawable.successful_ic)
         .background(R.drawable.layout_rounded_green)
         .onPositive(
-            positiveText,
+            activity.applicationContext.getString(R.string.cont),
             buttonBackgroundColor = R.drawable.layout_rounded_white,
             textColor = ContextCompat.getColor(activity.applicationContext, R.color.primaryColor)
         ) {
@@ -46,7 +44,7 @@ fun showNegativeDialog(
         .icon(R.drawable.error_ic)
         .background(R.drawable.layout_rounded_white)
         .onNegative(
-            "cancel",
+            activity.applicationContext.getString(R.string.cancel),
             buttonBackgroundColor = R.drawable.layout_rounded_red,
             textColor = ContextCompat.getColor(activity.applicationContext, R.color.white)
         ) {
