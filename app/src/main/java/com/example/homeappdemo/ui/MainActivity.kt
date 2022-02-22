@@ -69,6 +69,7 @@ class MainActivity : AppCompatActivity() {
         }
 
     }
+
     fun changeLanguage(locale: Language, context: Context) {
         when (locale) {
             Language.EN -> setAppLocale(context, "en")
