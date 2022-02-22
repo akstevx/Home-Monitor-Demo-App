@@ -1,6 +1,7 @@
 package com.example.homeappdemo.ui
 
 import android.content.Context
+import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -33,8 +34,8 @@ class MainActivity : AppCompatActivity() {
             Language.EN -> setAppLocale(context, "en")
             Language.FR -> setAppLocale(context, "fr")
         }
-        finish()
-        startActivity(intent)
+
+        this.recreate()
     }
 
     private fun initializeBindingView() {
