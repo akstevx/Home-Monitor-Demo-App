@@ -11,8 +11,6 @@ class Validator {
     companion object {
 
         // Default validation messages
-
-
         private val NAME_VALIDATION_MSG = """Name should be minimum 3 characters long
             |should have no number OR special character""".trimMargin()
         private val COUNTRY_VALIDATION_MSG = "Enter your country"

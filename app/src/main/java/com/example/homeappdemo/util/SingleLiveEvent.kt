@@ -47,10 +47,6 @@ fun <T> SingleLiveEvent<T>.observeChange(owner: LifecycleOwner, action: (T) -> U
     this.observe(owner, Observer { action(it) })
 }
 
-fun <T> SingleLiveEvent<T>.observeUnit(owner: LifecycleOwner, action: (T?) -> Unit) {
-    this.observe(owner, Observer { action(it) })
-}
-
 fun <T> LiveData<T>.observeChange(owner: LifecycleOwner, action: (T) -> Unit) {
     this.observe(owner, Observer { action(it) })
 }

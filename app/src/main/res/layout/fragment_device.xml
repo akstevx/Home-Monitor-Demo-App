@@ -66,7 +66,9 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/_4dp"
                 android:gravity="center"
+                android:layout_marginBottom="@dimen/_200dp"
                 android:text="@string/empty_device_text"
+                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="@+id/ivEmptyState"
                 app:layout_constraintStart_toStartOf="@+id/ivEmptyState"
                 app:layout_constraintTop_toBottomOf="@+id/ivEmptyState" />
