@@ -92,7 +92,6 @@ class UserProfileFragment : Fragment() {
     }
 
     private fun getDevices() {
-        println("GET DEVICES CALLED!!")
         viewModel.getNumberOfDevices()
         viewModel.getNumberOfDeviceByProductType()
         observeDeviceTextChange()
@@ -100,14 +99,10 @@ class UserProfileFragment : Fragment() {
 
     private fun observeDeviceTextChange() {
         viewModel.resetDeviceCount.observeChange(viewLifecycleOwner) {
-            println("GET DEVICES OBSERVED!!")
-
             binding.txtDeviceCount.text = "${viewModel.deviceCount}"
         }
 
         viewModel.resetDeviceCountByProduct.observeChange(viewLifecycleOwner) {
-            println("GET DEVICES BY PRODUCT OBSERVED!!")
-
             binding.txtRollerShuttersCount.text = "${viewModel.rollerShutterCount}"
             binding.txtLightCount.text = "${viewModel.lightCount}"
             binding.txtHeatersCount.text = "${viewModel.heaterCount}"
